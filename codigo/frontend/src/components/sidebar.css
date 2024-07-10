@@ -1,0 +1,65 @@
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #E2E5F0;
+    color: #fff;
+    padding-top: 20px;
+    border-top-right-radius: 20px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu-items {
+    text-align: center;
+    padding: 20px; 
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.sidebar a {
+    padding: 15px 15px;
+    display: block;
+    color: #8C91A4;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.sidebar a:hover {
+    background-color: #17E3CB;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.sidebar a.active {
+    background-color: #17E3CB;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+@media screen and (min-width: 1025px) {
+    .data-table th,
+    .data-table td {
+      padding: 12px; /* Aumenta o preenchimento em telas maiores */
+    }
+  
+    .pagination button {
+      padding: 12px 24px; /* Aumenta o preenchimento dos botões de paginação em telas maiores */
+    }
+}

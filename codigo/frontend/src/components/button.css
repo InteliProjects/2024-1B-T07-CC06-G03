@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+.custom-button {
+  background-color: #17E3CB; /* Cor de fundo azul */
+  color: #0027BD; /* Cor do texto */
+  border: 5; /* Sem bordas */
+  border-color: #17E3CB;
+  padding: 12px 40px; /* Espaçamento interno */
+  font-family: 'DM Sans', sans-serif;
+  font-size: 2rem; /* Tamanho do texto */
+  display: flex; /* Utiliza flexbox para alinhar o ícone e o texto */
+  align-items: center; /* Alinha itens verticalmente */
+  cursor: pointer; /* Cursor em forma de ponteiro */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: background-color 0.3s; /* Transição suave da cor de fundo */
+  margin-top: 200px;
+  font-weight: bolder;
+}
+
+.button-icon {
+  margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.custom-button:hover {
+  border-color: #0056b3; /* Cor de fundo azul mais escura ao passar o mouse */
+}

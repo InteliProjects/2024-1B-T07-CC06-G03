@@ -1,0 +1,189 @@
+.table-container {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px; /* Reduz o tamanho da fonte */
+}
+
+.data-table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.data-table tr:hover {
+  background-color: #ddd;
+}
+
+.alerta {
+  padding: 5px; /* Adiciona um pouco de preenchimento */
+  text-align: center; /* Centraliza o texto */
+  color: white; /* Texto branco para contraste */
+}
+
+.alerta.Ok {
+  color: #28a745; /* Fundo verde */
+}
+
+.alerta.Insuficiente {
+  color: #ffc107; /* Fundo amarelo */
+}
+
+.alerta.Excedido {
+  color: #dc3545; /* Fundo vermelho */
+}
+
+.empty-container-pag {
+  margin-top: 4vh;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button,
+.pagination .pagination-ellipsis {
+  margin: 0 5px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  font-size: 16px; /* Aumenta o tamanho da fonte */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+.pagination button.pagination-arrow {
+  background-color: #17E3CB;
+}
+
+.pagination button.pagination-button {
+  background-color: #dadbdd;
+  color: #44495C;
+}
+
+.pagination button.pagination-button.active {
+  background-color: #17E3CB;
+  color: white;
+}
+
+.pagination .pagination-ellipsis {
+  background-color: #696969;
+}
+
+.pagination button:disabled,
+.pagination .pagination-ellipsis:disabled {
+  background-color: #a9a9a9;
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled),
+.pagination .pagination-button:hover {
+  background-color: #17E3CB; /* Cor de fundo ao passar o mouse */
+  color: white;
+}
+
+.totals-container {
+  display: flex;
+  justify-content: space-between; /* Distribui os itens ao longo do eixo horizontal */
+  color: #191B23;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.total-box {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza o conteúdo de cada total-box */
+  flex: 1; /* Faz com que cada total-box ocupe o mesmo espaço */
+}
+
+.total-box u {
+  text-decoration: underline;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+
+.rota-cell {
+  position: relative;
+  cursor: pointer;
+}
+
+.dia-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.dia-text {
+  flex: 1;
+  text-align: center;
+}
+
+.chevron-icon {
+  position: absolute;
+  right: 1px;
+  color: #696969;
+}
+
+.tooltip {
+  position: absolute;
+  top: -25px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 7px;
+  white-space: nowrap;
+  font-size: 12px;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pagination-download {
+  background-color: #ccc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  font-size: 16px; /* Aumenta o tamanho da fonte */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+.pagination-download:hover {
+  background-color: #15d3b7;
+}
+
+@media screen and (min-width: 1025px) {
+  .data-table th,
+  .data-table td {
+    padding: 15px; /* Aumenta o preenchimento em telas maiores */
+  }
+
+  .pagination button {
+    padding: 12px 24px; /* Aumenta o preenchimento dos botões de paginação em telas maiores */
+  }
+}

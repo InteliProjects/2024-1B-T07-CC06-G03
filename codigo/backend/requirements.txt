@@ -1,0 +1,8 @@
+Flask
+pytest
+pandas
+requests
+haversine
+flask-cors
+pytest-mock
+scikit-learn

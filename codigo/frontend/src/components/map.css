@@ -1,0 +1,41 @@
+.map-container {
+    position: relative;
+    margin-top: 20px; /* Margem acima do mapa */
+    margin-bottom: 20px; /* Margem abaixo do mapa */
+    padding: 10px; /* Espaço interno do contêiner */
+    border: 2px solid black; /* Borda preta */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+.toggle-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    z-index: 1000;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.toggle-button:hover {
+    background-color: #f0f0f0;
+}
+
+.leaflet-tooltip.custom-tooltip {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 2px 8px;
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 15px;
+}

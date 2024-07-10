@@ -1,0 +1,73 @@
+.empty-container-pag {
+  margin-top: 4vh;
+}
+  
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button,
+.pagination .pagination-ellipsis {
+  margin: 0 5px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  font-size: 16px; /* Aumenta o tamanho da fonte */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+.pagination button.pagination-arrow {
+  background-color: #17E3CB;
+}
+
+.pagination button.pagination-button {
+  background-color: #dadbdd;
+  color: #44495C;
+}
+
+.pagination button.pagination-button.active {
+  background-color: #17E3CB;
+  color: white;
+}
+
+.pagination .pagination-ellipsis {
+  background-color: #696969;
+}
+
+.pagination button:disabled,
+.pagination .pagination-ellipsis:disabled {
+  background-color: #a9a9a9;
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled),
+.pagination .pagination-button:hover {
+  background-color: #17E3CB; /* Cor de fundo ao passar o mouse */
+  color: white;
+}
+
+.totals-container {
+  display: flex;
+  justify-content: space-between; /* Distribui os itens ao longo do eixo horizontal */
+  color: #191B23;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.total-box {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza o conteúdo de cada total-box */
+  flex: 1; /* Faz com que cada total-box ocupe o mesmo espaço */
+}
+
+.total-box u {
+  text-decoration: underline;
+  font-weight: bold;
+  margin-left: 5px;
+}
